@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>NSFW Keywords</title>
+  <style>
+    body { font: 13px system-ui, sans-serif; margin: 14px; max-width: 720px; }
+    textarea { width: 100%; height: 260px; font: 12px ui-monospace, monospace; }
+    button { padding: 8px 10px; }
+    .row { margin: 8px 0; }
+    #msg { color: #0a7; }
+  </style>
+</head>
+<body>
+  <h2>NSFW Keyword List</h2>
+  <div class="row">
+    <textarea id="kw" spellcheck="false"></textarea>
+  </div>
+  <div class="row">
+    <button id="save">Save</button>
+    <span id="msg" style="margin-left:10px;"></span>
+  </div>
+  <p>Full-URL contains check. One keyword or phrase per line.</p>
+  <script src="options.js"></script>
+</body>
+</html>

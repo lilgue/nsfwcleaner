@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>NSFW Search Eraser</title>
+  <style>
+    body { font: 13px system-ui, sans-serif; margin: 14px; width: 340px; }
+    .row { margin-bottom: 10px; }
+    button { padding: 8px 10px; }
+    code { word-break: break-all; }
+    #list { max-height: 240px; overflow:auto; border:1px solid #ddd; padding:6px; }
+    small { color:#666; }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <label>Look-back days (0 = all time):
+      <input id="days" type="number" min="0" value="0" style="width:80px">
+    </label>
+  </div>
+  <div class="row">
+    <button id="scan">Scan</button>
+  </div>
+  <div class="row"><strong id="status">Idle</strong></div>
+  <div id="list" hidden></div>
+  <div class="row"><small>Alt+P purges and closes. Popup only scans.</small></div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "NSFW Search Eraser",
+  "version": "1.2.0",
+  "description": "Finds and purges NSFW URLs in history and closes matching tabs.",
+  "permissions": ["history", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_title": "NSFW Search Eraser", "default_popup": "popup.html" },
+  "options_page": "options.html",
+  "background": { "service_worker": "background.js" },
+  "commands": {
+    "purge_nsfw": {
+      "suggested_key": {
+        "default": "Alt+P",
+        "mac": "Alt+P"
+      },
+      "description": "Delete NSFW matches and close matching tabs (all time)"
+    }
+  }
+}
